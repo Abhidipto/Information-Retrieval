@@ -1,0 +1,170 @@
+
+Comparison with respect to Page Rank:
+
+Top 20 pages sorted based on Page Rank applied on Baseline:
+
+1)Wayback_Machine: 0.0235375099597
+2)International_Standard_Book_Number: 0.0216331465494
+3)Integrated_Authority_File: 0.0181844052636
+4)Digital_object_identifier: 0.0175306428351
+5)Library_of_Congress_Control_Number: 0.0132911531611
+6)Bibcode: 0.00966193588286
+7)National_Diet_Library: 0.00644594125992
+8)PubMed_Identifier: 0.00631920762619
+9)OCLC: 0.00587456849435
+10)Astronomy: 0.00565185812889
+11)Moon: 0.00543616206755
+12)PubMed_Central: 0.00505926439763
+13)Earth: 0.00494536899293
+14)Sun: 0.00487696211826
+15)Canada: 0.00482817950595
+16)ArXiv: 0.00455404683256
+17)Solar_eclipse: 0.00333036490204
+18)United_Kingdom: 0.00301266611364
+19)NASA: 0.00291725103958
+20)Solar_System: 0.00265467100299
+
+
+
+
+Top 20 pages sorted based on Page Rank applied on G1 with d=0.55:
+
+1)International_Standard_Book_Number: 0.0160790263898
+2)Digital_object_identifier: 0.0119811125635
+3)Wayback_Machine: 0.0118960530539
+4)Integrated_Authority_File: 0.0107210497548
+5)Library_of_Congress_Control_Number: 0.0081193447564
+6)Bibcode: 0.00682107434562
+7)Moon: 0.00470865289848
+8)PubMed_Identifier: 0.00443872426139
+9)National_Diet_Library: 0.00440255483946
+10)Earth: 0.0042166454573
+11)Sun: 0.00417125497711
+12)OCLC: 0.00388900366053
+13)Astronomy: 0.00375463878113
+14)ArXiv: 0.0032292428377
+15)Solar_eclipse: 0.00312242143287
+16)Canada: 0.0030775530526
+17)PubMed_Central: 0.00307600372026
+18)United_Kingdom: 0.00285907822119
+19)NASA: 0.00268089885054
+20)Solar_System: 0.00235800736734
+
+
+
+Top 20 pages sorted based on Page Rank applied on G2 with d=0.55:
+
+1)International_Standard_Book_Number: 0.014516781375
+2)Digital_object_identifier: 0.00786447463908
+3)United_States: 0.00709101723848
+4)Spanish_language: 0.00696187465322
+5)Wayback_Machine: 0.00611663513937
+6)Geographic_coordinate_system: 0.00573279270574
+7)English_language: 0.00525983918623
+8)French_language: 0.00401592077981
+9)Spain: 0.00398555413102
+10)Argentina: 0.0036643449227
+11)Canada: 0.00364497478567
+12)France: 0.0035302152053
+13)DMOZ: 0.00349536759864
+14)Unicode: 0.00348660060635
+15)Latin: 0.00333424019065
+16)ISO_639-3: 0.00325375057387
+17)German_language: 0.00314787096532
+18)Wikidata: 0.00313723591268
+19)Portuguese_language: 0.00296704747937
+20)ISO_639-1: 0.00286887988357
+
+
+
+
+Observation:
+
+- Reduced Damping factor on G1 With respect to baseline:
+
+    --In the top 20 pages, 5 pages are in same order but with different scores
+
+    --All the top 20 pages overlap between the two lists
+
+    --In top 20 pages , the highest deviation in ranking in observed for the page "PubMed_Central" which has rank 12 in Baseline and 17 in the list with reduced             Damping factor 
+
+    --Scores vary for all pages but with marginal difference
+
+Inference:
+
+  --The reduced damping factor affects the ranks and order for individual pages with marginal difference(atleast for the top 20 pages).Thus considering a moderate          result set for a query(20 in this case), reducing the damping factor will not affect the result set significantly
+
+
+- Reduced Damping factor on G2 With respect to baseline:
+
+ --In the top 20 pages, 0 pages are in same order 
+ --4  among  the top 20 pages overlap between the two lists
+ --In top 20 pages , the lowest deviation in ranking in observed for the page "International_Standard_Book_Number" which has rank 2 in Baseline and 1 in the list with     reduced Damping factor
+ --Scores vary for all pages but with marginal difference
+
+Inference:
+
+  --The pages recorded in these two lists are inherently differrent as the crawling algorithm applied to obtain the garphs are differrent.
+
+##############################################################################################################################################################################################################################################################################################################################################
+
+Comparison with respect to effects on the process of calculating page rank:
+
+Following are the number of iterataions with its repective perplexity required to converge  for the Baseline:
+
+Perplexity for iteration 1 is :740.420883477
+Perplexity for iteration 2 is :702.973186444
+Perplexity for iteration 3 is :680.057080676
+Perplexity for iteration 4 is :678.014828779
+Perplexity for iteration 5 is :682.592050725
+Perplexity for iteration 6 is :686.060377847
+Perplexity for iteration 7 is :689.111765678
+Perplexity for iteration 8 is :691.637976107
+Perplexity for iteration 9 is :693.622081245
+Perplexity for iteration 10 is :695.19040896
+Perplexity for iteration 11 is :696.407957364
+Perplexity for iteration 12 is :697.351645386
+Perplexity for iteration 13 is :698.080412258
+Perplexity for iteration 14 is :698.642608873
+Perplexity for iteration 15 is :699.075815771
+
+
+
+Following are the number of iterataions with its repective perplexity values required to converge for the G1 with d=0.55:
+
+Perplexity for iteration 1 is :867.118591681
+Perplexity for iteration 2 is :853.948499642
+Perplexity for iteration 3 is :848.110038035
+Perplexity for iteration 4 is :847.888880021
+Perplexity for iteration 5 is :848.45273154
+Perplexity for iteration 6 is :848.740416699
+Perplexity for iteration 7 is :848.90397169
+
+
+
+Following are the number of iterataions with its repective perplexity values required to converge for the G2 with d=0.55:
+
+Perplexity for iteration 1 is :842.180075384
+Perplexity for iteration 2 is :850.805690911
+Perplexity for iteration 3 is :845.295998043
+Perplexity for iteration 4 is :843.938189548
+Perplexity for iteration 5 is :843.349336192
+Perplexity for iteration 6 is :843.131847318
+Perplexity for iteration 7 is :843.044212459
+Perplexity for iteration 8 is :843.008906404
+
+Observation:
+
+-Compared to Baseline:
+
+	-- For both G1 and G2, when the damping factor is reduced, the number of iterations required to converge becomes less
+	-- For both G1 and G2, The perplexity values for each itertaion is  higher than the baseline
+
+
+Inference:
+
+-- A lower damping factor converges the page ranks faster than a higher damping factor, a possible explanation for this is that a lower damping fator indicates that       the surfer would jump to a page with higher probability, and thus would traverse the graph faster and thus would converge faster.
+
+
+
+

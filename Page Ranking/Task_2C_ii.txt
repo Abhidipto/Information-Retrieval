@@ -1,0 +1,136 @@
+
+Comparison with respect to Page Rank:
+
+Top 20 pages with their page ranks sorted based on Page Rank applied on Baseline:
+
+1)Wayback_Machine: 0.0235375099597
+2)International_Standard_Book_Number: 0.0216331465494
+3)Integrated_Authority_File: 0.0181844052636
+4)Digital_object_identifier: 0.0175306428351
+5)Library_of_Congress_Control_Number: 0.0132911531611
+6)Bibcode: 0.00966193588286
+7)National_Diet_Library: 0.00644594125992
+8)PubMed_Identifier: 0.00631920762619
+9)OCLC: 0.00587456849435
+10)Astronomy: 0.00565185812889
+11)Moon: 0.00543616206755
+12)PubMed_Central: 0.00505926439763
+13)Earth: 0.00494536899293
+14)Sun: 0.00487696211826
+15)Canada: 0.00482817950595
+16)ArXiv: 0.00455404683256
+17)Solar_eclipse: 0.00333036490204
+18)United_Kingdom: 0.00301266611364
+19)NASA: 0.00291725103958
+20)Solar_System: 0.00265467100299
+
+Top 20 pages with their page ranks sorted based on Page Rank applied on G1 with 4 iterations:
+
+1)Wayback_Machine: 0.0259097665847
+2)International_Standard_Book_Number: 0.023408821773
+3)Integrated_Authority_File: 0.0198520774602
+4)Digital_object_identifier: 0.0189908876419
+5)Library_of_Congress_Control_Number: 0.014391365914
+6)Bibcode: 0.0104709351736
+7)National_Diet_Library: 0.00704310025954
+8)PubMed_Identifier: 0.00686801755846
+9)OCLC: 0.00641399415435
+10)Astronomy: 0.00609163674399
+11)Moon: 0.00576558392159
+12)PubMed_Central: 0.00551763988896
+13)Canada: 0.00529733078839
+14)Earth: 0.00517593884636
+15)Sun: 0.00507895942704
+16)ArXiv: 0.00490538939133
+17)Solar_eclipse: 0.0033788361036
+18)United_Kingdom: 0.00328769359959
+19)NASA: 0.00300125081238
+20)Solar_System: 0.00282992898242
+
+Top 20 pages with their page ranks sorted based on Page Rank applied on G2 with 4 iterations:
+
+1)International_Standard_Book_Number: 0.0206385681852
+2)Digital_object_identifier: 0.012466551728
+3)United_States: 0.0114410666526
+4)Wayback_Machine: 0.00902080093184
+5)Spanish_language: 0.0083695398647
+6)English_language: 0.00806989883937
+7)Geographic_coordinate_system: 0.00696469723252
+8)Wikidata: 0.0064704615959
+9)DMOZ: 0.0063523697662
+10)Canada: 0.00607567159574
+11)Wikipedia: 0.00589122402478
+12)ISO_639-3: 0.00587221443097
+13)French_language: 0.00574167102454
+14)ISO_639-1: 0.00569915831443
+15)Unicode: 0.00561772877571
+16)ISO_639-2: 0.00523837843211
+17)France: 0.00520447133986
+18)Spain: 0.00506142860743
+19)German_language: 0.00484318924481
+20)European_Union: 0.00447827641577
+
+
+Observation:
+
+- 4 iterations on G1 With respect to baseline:
+
+    --In the top 20 pages, 17 pages are in same order but with different scores
+
+    --All the top 20 pages overlap between the two lists
+
+    --In top 20 pages , the only 3 pages that have different ordering has a deviation of 1
+
+    --Scores vary for all pages but with marginal difference
+
+Inference:
+
+  --Page rank algorithm executed for 4 iterations give almost similar ordering , just the scores are different.This indicates that in first 4 iterations, ranks or          ordering of individual pages are almost determined.
+
+##############################################################################################################################################################################################################################################################################################################################################
+
+
+Comparison with respect to perplexity values:
+
+
+Following are the number of iterataions with its repective perplexity required to converge value for the Baseline:
+
+Perplexity for iteration 1 is :740.420883477
+Perplexity for iteration 2 is :702.973186444
+Perplexity for iteration 3 is :680.057080676
+Perplexity for iteration 4 is :678.014828779
+Perplexity for iteration 5 is :682.592050725
+Perplexity for iteration 6 is :686.060377847
+Perplexity for iteration 7 is :689.111765678
+Perplexity for iteration 8 is :691.637976107
+Perplexity for iteration 9 is :693.622081245
+Perplexity for iteration 10 is :695.19040896
+Perplexity for iteration 11 is :696.407957364
+Perplexity for iteration 12 is :697.351645386
+Perplexity for iteration 13 is :698.080412258
+Perplexity for iteration 14 is :698.642608873
+Perplexity for iteration 15 is :699.075815771
+
+
+
+Following are the number of iterataions with its repective perplexity values achived with 4 iterations in G1:
+
+Perplexity for iteration 1 is :740.420883477
+Perplexity for iteration 2 is :702.973186444
+Perplexity for iteration 3 is :680.057080676
+Perplexity for iteration 4 is :678.014828779
+
+
+Following are the number of iterataions with its repective perplexity values achived with 4 iterations in G2:
+
+Perplexity for iteration 1 is :687.443500625
+Perplexity for iteration 2 is :697.088339705
+Perplexity for iteration 3 is :671.50739174
+Perplexity for iteration 4 is :660.542020245
+
+Observation:
+
+- For both G1 and G2 it can be seen that the perplexity values are varrying by quite a large gap and thus it can be said that convergence is not achieved
+
+
+

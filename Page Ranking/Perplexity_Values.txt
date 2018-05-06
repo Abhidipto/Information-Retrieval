@@ -1,0 +1,33 @@
+Following are the perplexity values recorded for each iteration required for convergence, while running Page Ranking Algorithm on G1:
+
+Perplexity for iteration 1 is :740.420883477
+Perplexity for iteration 2 is :702.973186444
+Perplexity for iteration 3 is :680.057080676
+Perplexity for iteration 4 is :678.014828779
+Perplexity for iteration 5 is :682.592050725
+Perplexity for iteration 6 is :686.060377847
+Perplexity for iteration 7 is :689.111765678
+Perplexity for iteration 8 is :691.637976107
+Perplexity for iteration 9 is :693.622081245
+Perplexity for iteration 10 is :695.19040896
+Perplexity for iteration 11 is :696.407957364
+Perplexity for iteration 12 is :697.351645386
+Perplexity for iteration 13 is :698.080412258
+Perplexity for iteration 14 is :698.642608873
+Perplexity for iteration 15 is :699.075815771
+
+
+Following are the perplexity values recorded for each iteration required for convergence, while running Page Ranking Algorithm on G2:
+
+Perplexity for iteration 1 is :687.443500625
+Perplexity for iteration 2 is :697.088339705
+Perplexity for iteration 3 is :671.50739174
+Perplexity for iteration 4 is :660.542020245
+Perplexity for iteration 5 is :653.572369597
+Perplexity for iteration 6 is :649.549071059
+Perplexity for iteration 7 is :647.083217925
+Perplexity for iteration 8 is :645.564852616
+Perplexity for iteration 9 is :644.602173425
+Perplexity for iteration 10 is :643.984072326
+Perplexity for iteration 11 is :643.579065325
+Perplexity for iteration 12 is :643.310245027

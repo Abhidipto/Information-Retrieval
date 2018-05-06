@@ -1,0 +1,5 @@
+Number of pages with no outlinks for G1-->8
+Number of pages with no inlinks for G1-->0
+
+Number of pages with no outlinks for G2-->4
+Number of pages with no outlinks for G2-->0

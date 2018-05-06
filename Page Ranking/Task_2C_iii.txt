@@ -1,0 +1,103 @@
+Following are the top 10 pages sorted based on Page Rank and their respective Page Ranks for G1:
+
+1)Wayback_Machine: 0.0235375099597
+2)International_Standard_Book_Number: 0.0216331465494
+3)Integrated_Authority_File: 0.0181844052636
+4)Digital_object_identifier: 0.0175306428351
+5)Library_of_Congress_Control_Number: 0.0132911531611
+6)Bibcode: 0.00966193588286
+7)National_Diet_Library: 0.00644594125992
+8)PubMed_Identifier: 0.00631920762619
+9)OCLC: 0.00587456849435
+10)Astronomy: 0.00565185812889
+
+Following are the top 10 pages sorted based on inlink count and their respective number of inlinks counts for G1:
+
+1)Solar_eclipse: 687
+2)Eclipse: 632
+3)Solar_eclipses_on_the_Moon: 596
+4)Moon: 558
+5)Sun: 552
+6)Transit_(astronomy): 532
+7)Solar_eclipse_of_August_11,_1999: 530
+8)Saros_(astronomy): 525
+9)Solar_eclipse_of_August_21,_2017: 525
+10)Solar_eclipse_of_May_29,_1919: 525
+
+
+Following are the top 10 pages sorted based on page rank and their respective page-ranks  for G2:
+
+1)International_Standard_Book_Number: 0.0212525678438
+2)Digital_object_identifier: 0.0128325778358
+3)United_States: 0.0118472371446
+4)Wayback_Machine: 0.00954856607092
+5)English_language: 0.00843064205215
+6)Spanish_language: 0.00833875074165
+7)Wikidata: 0.00704696899729
+8)Geographic_coordinate_system: 0.00691826482255
+9)DMOZ: 0.0067866884682
+10)Wikipedia: 0.00677422873502
+
+Following are the top 10 pages sorted based on inlink count and their respective number of inlinks for G2:
+
+1)International_Standard_Book_Number: 577
+2)Spanish_language: 496
+3)French_language: 320
+4)Digital_object_identifier: 307
+5)Portuguese_language: 279
+6)United_States: 278
+7)Spain: 277
+8)English_language: 268
+9)Wayback_Machine: 266
+10)Italian_language: 261
+
+ - Comparison between G1 sorted by Page Rank and G1 sorted by inlink count:
+	
+	-- As we can see from top 10 pages there are no common pages between the two lists.This is because the fact that Page rank algorithm is independent of            crawling algorithm and the seed url provided, but in case of inlink counts, as BFS was used for crawling  the links  at a shallow depth will be have more 
+           inlinks compared to the links at a higher depth and thus will have higher ranks iun this scenario.
+								 
+            
+
+ - Comparison between G2 sorted by Page Rank and G2 sorted by inlink count:
+ 	
+	-- As we can see from top 10 pages there are 6 common pages between the two lists. 
+        -- The highest deviation in order is 5 for the page Wayback_Machine which appears in 4th and 9th positions.
+	-- There is no co-relation between the ordering of pages in two lists.
+
+
+
+
+
+Pros for considering inlink counts as an alternative for Page Ranking:
+
+1) Relevance to seed url:
+
+--If BFS is used for crawling, the pages at a shallow depth will have a higher inlink counts and thus  appears as high ranked pages in the lists.Again we know  that      pages at shallow depth are much more related to the given seed url than pages at deeper depth and thus it can be said that inlink count gives us a more relevent set    of pages than unfocused page rank.
+
+2)Ranking is achieved faster:
+
+--Inlink count can be achieved as we parse the graph itself, without having to calculate the page rank separately which might take considerable number of iterations to   converge
+
+
+
+
+Cons for considering inlink counts as an alternative for Page Ranking:
+
+1)Nature of links:
+The nature of links that contribute to the inlink count might not always be legitimate.For example, if self loops are not taken care of during crawling, then the high inlink count of an page might indicate a false importance.
+
+In the above scenario, a page rank algorithm can take care of the cycle with teleportation.
+
+Sources or pages with no inlinks will appear at the very bottom of a list of pages which is sorted by in-link count and that might not correctly reflect the importance the page.Compatatively Page Rank algorithm takes care of this with teleportation.
+
+2)Dependence on crawling algorithm:
+The relevance of inlink count depends heavily on the crawling algorithm, for example, as it can be seen that with DFS algorithm , the top 10 pages sorted based on inlink counts, are completely unrelated to the seed url. 
+
+
+
+
+
+
+
+
+
