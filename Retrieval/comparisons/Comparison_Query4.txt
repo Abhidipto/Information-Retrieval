@@ -1,0 +1,24 @@
+Query 4 :japan continental airline
+
+Top 5 Lucene Documents:
+
+4 Q0 Aeroflot 1 0.17276052 Lucene_Model
+4 Q0 Concorde 2 0.098207325 Lucene_Model
+4 Q0 Solar_eclipse_of_July_22,_2009 3 0.095537126 Lucene_Model
+4 Q0 France 4 0.094568655 Lucene_Model
+4 Q0 Synchronous_grid_of_Continental_Europe 5 0.082882 Lucene_Model
+
+Top 5 BM25 Documents:
+
+4 Q0 Aeroflot 9.31060426324 1 BM25_Model
+4 Q0 Solar_eclipse_of_July_22,_2009 7.33783972746 2 BM25_Model
+4 Q0 Synchronous_grid_of_Continental_Europe 5.93054380996 3 BM25_Model
+4 Q0 Concorde 5.5111862398 4 BM25_Model
+4 Q0 Solar_flare 5.09678463896 5 BM25_Model
+
+Observation:
+
+--4 out of 5 documents are common to both the lists
+--The first document "Aeroflot" is common for the lists
+--The high ranking for the first document is due to the fact that the term "airline" has appeared 114 times in this document.
+  and this also explain the unusually high score for this document in BM25 ranking

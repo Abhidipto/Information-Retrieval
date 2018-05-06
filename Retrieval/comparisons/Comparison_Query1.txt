@@ -1,0 +1,29 @@
+Comparison for query 1:dark eclipse moon
+----------------------------------------
+
+
+
+Top 5 Lucene documents:
+
+1 Q0 Dark_moon 1 0.37764737 Lucene_Model
+1 Q0 Magnitude_of_an_eclipse 2 0.3246155 Lucene_Model
+1 Q0 Magnitude_of_eclipse 3 0.3221955 Lucene_Model
+1 Q0 Solar_eclipse_of_May_3,_1715 4 0.31060728 Lucene_Model
+1 Q0 Lunar_eclipse 5 0.30824623 Lucene_Model
+
+Top 5 BM25 documents
+
+1 Q0 Solar_transition_region 3.24557305298 1 BM25_Model
+1 Q0 Joseph_von_Fraunhofer 3.23841980702 2 BM25_Model
+1 Q0 Naked_eye 3.19306858275 3 BM25_Model
+1 Q0 Dark_moon 3.12035244184 4 BM25_Model
+1 Q0 Supergranulation 2.95267999107 5 BM25_Model
+
+Observation:
+--Between the top 5 documents only 1 document named "Dark_Moon" is common.
+--By looking at the names of documents fetched, lucene gives a more topically relevant set of documents
+--in BM25 4 documents are somewhat topically related to the query,except for Naked_Eye.Naked eye has "dark" 12 times and "moon" 6 times, 
+  thus achieved a pseudo relevance
+-- As the corpus size is really small, few words which are related to the seed url, are  present in a large number of documents,thus in BM25 calculation,
+   when log is applied on those words, their value becomes negative an thus gets a lower score.This might be a reason for absence of topically relevant 
+   documents in BM25 list

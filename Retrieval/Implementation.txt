@@ -1,0 +1,26 @@
+Implementation for Task1:
+
+The following changes were made to the given code
+
+1)Changed the analyzer to an instance of "simple analyzer" while parsing the query and inside indexWriterConfig
+2)This code accepts the the queries in a text file and the location of the text file is taken as input
+3)for each query in the file the top 100 documents are fetched and stored in a text file with same name as the query
+4)after result for each query is fetched the index file is made empty
+
+
+ 
+ 
+Implementation for Task2:
+
+1)A global dictionary called "UNIGRAM_INVERTED_INDEX" is made from the unigram index text file generated from HW3.This dictionary represents the inverted index
+  This is done in a method called "generate_index()"
+2)In this method another dictionary called "DOCUMENT_LENGTH_DICT" is created which holds the every document in the corpus as the
+ key and their length(words count) as value. This is required for calculating BM25 score
+ 
+3)In generate_BM25() method the following steps are done:
+
+i)avdl is calculated 
+ii)term frequency dictionary is created for all the terms in all the queries.This is done by calling another function called "create_file()"
+iii)for each query another function called "generate_score()" is called.This method actually calculates the BM25 score for each term in the query 
+and keeps on adding it to the documents.
+after all the documents are scored , they are reverse sorted based on their score and printed in a file with the same name as the query

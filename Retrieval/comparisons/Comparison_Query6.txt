@@ -1,0 +1,26 @@
+Query 6: solar eclipse fiction
+
+Top 5 Lucene Documents:
+
+6 Q0 Solar_eclipses_in_fiction 1 0.26622945 Lucene_Model
+6 Q0 List_of_solar_eclipses_visible_from_the_Philippines 2 0.24721706 Lucene_Model
+6 Q0 List_of_solar_eclipses_visible_from_Ukraine 3 0.20376399 Lucene_Model
+6 Q0 Moon_in_fiction 4 0.18295681 Lucene_Model
+6 Q0 Lists_of_solar_eclipses 5 0.16521053 Lucene_Model
+
+
+Top 5 BM25 Documents:
+
+6 Q0 John_Llewellyn_Rhys_Prize 5.12199878843 1 BM25_Model
+6 Q0 Patrick_Moore 4.88035652419 2 BM25_Model
+6 Q0 Halys_River 4.68332461508 3 BM25_Model
+6 Q0 James_Simmons_(poet) 4.12448352924 4 BM25_Model
+6 Q0 Moon_in_fiction 4.11657411158 5 BM25_Model
+
+
+Observation:
+--Only 1 document -"Moon_in_fiction" is common in both the list and in different order
+--For this query, the documents fetched by BM25 has been mainly influenced by the term "fiction" as it the rarest among the 3 words 
+  present in the query.This is evident as all the pages has the the fiction in it.
+--for this query it can be said that both the queries has fetched somewhat irrelevant documents
+

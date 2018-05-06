@@ -1,0 +1,26 @@
+Query 7:2017 solar eclipse
+---------------------------
+
+Top 5 Lucene Documents:
+
+7 Q0 List_of_solar_eclipses_visible_from_the_Philippines 1 0.86354136 Lucene_Model
+7 Q0 List_of_solar_eclipses_visible_from_Ukraine 2 0.71175766 Lucene_Model
+7 Q0 List_of_solar_eclipses_visible_from_Russia 3 0.5213402 Lucene_Model
+7 Q0 Solar_eclipse_of_February_28,_2063 4 0.45613402 Lucene_Model
+7 Q0 Solar_eclipse_of_October_14,_2042 5 0.4516246 Lucene_Model
+
+Top 5 BM25 Documents:
+
+7 Q0 Proceedings_of_the_Royal_Society 3.80880651372 1 BM25_Model
+7 Q0 Vice_(magazine) 3.69814404347 2 BM25_Model
+7 Q0 Physical_Review_D 3.53098496573 3 BM25_Model
+7 Q0 YouTube 3.50139770669 4 BM25_Model
+7 Q0 Russian_Academy_of_Sciences 3.48172473468 5 BM25_Model
+
+Observation:
+ --None of the documents overlap between these two lists
+ --The reason for this disjoint set may be because of the factor lucene prioritized on the more frequent words like solar and eclipse
+   whereas BM25, gave priority to the more "discriminatory" term , i.e. 2017.This is evident as the first document in BM25 list ,
+   "Proceedings_of_the_Royal_Society" has 8 occurrences of the term 2017 and 0 occurrence of the terms solar and eclipse.
+   Conversely, the first document in lucene list "List_of_solar_eclipses_visible_from_the_Philippines" has 68 occurrence of "solar" and 
+   70 occurrence of "eclipse1" but 0 occurrence of "2017"

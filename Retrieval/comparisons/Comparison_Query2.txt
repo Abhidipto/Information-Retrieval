@@ -1,0 +1,30 @@
+Comparison for query 2:forecast models
+----------------------------------------
+
+
+
+Top 5 Lucene documents:
+
+2 Q0 Solar_eclipse_of_September_4,_2100 1 0.12515862 Lucene_Model
+2 Q0 Skylab 2 0.10838759 Lucene_Model
+2 Q0 Digital8 3 0.100465655 Lucene_Model
+2 Q0 Solar_eclipse_of_August_18,_1868 4 0.09386897 Lucene_Model
+2 Q0 Solar_minimum 5 0.07822414 Lucene_Model
+
+Top 5 BM25 documents:
+2 Q0 Solar_eclipse_of_September_4,_2100 6.17228193273 1 BM25_Model
+2 Q0 Solar_eclipse_of_August_18,_1868 5.68620083017 2 BM25_Model
+2 Q0 European_Network_of_Transmission_System_Operators_for_Electricity 5.66232323514 3 BM25_Model
+2 Q0 Digital8 5.27946385617 4 BM25_Model
+2 Q0 Solar_minimum 5.24325249249 5 BM25_Model
+
+Observation:
+
+--4 out of 5 documents are commin between the two lists but in different order
+--the third document - "European_Network_of_Transmission_System_Operators_for_Electricity" got high rank in BM25 model as the term 
+"forecast" is relatively rare in the given documents and this document has 5 occurrences of it.
+--In both the list , Solar_eclipse_of_September_4,_2100 came in top position, this document although is not topically relevant to the query
+  gets such a high rank because, in BM25, the document length for is quite small and thus the factor (dl/avdl) becomes small 
+  and in turn the score becomes high.
+  
+  

@@ -1,0 +1,25 @@
+Query 9:nordic marine animals
+
+Top 5 Lucene Documents:
+
+9 Q0 Bay_of_Bengal 1 0.12777346 Lucene_Model
+9 Q0 Black_Sea 2 0.08672331 Lucene_Model
+9 Q0 Quebec 3 0.08670063 Lucene_Model
+9 Q0 Germany 4 0.08506043 Lucene_Model
+9 Q0 Synchronous_grid_of_Continental_Europe 5 0.0678052 Lucene_Model
+
+Top 5 BM25 Documents:
+
+9 Q0 Bay_of_Bengal 9.7389515226 1 BM25_Model
+9 Q0 Black_Sea 8.43050957555 2 BM25_Model
+9 Q0 Synchronous_grid_of_Continental_Europe 8.24528206065 3 BM25_Model
+9 Q0 Atlantic_Ocean 6.7943914821 4 BM25_Model
+9 Q0 Lunar_effect 6.35775925807 5 BM25_Model
+
+Observation:
+
+--3 out of 5 documents are common between the two lists
+--2 of them are in same order(1st and 2nd)
+--By looking at the document names it can be said that both the models fetched a fairly relevant set of documents.
+--It can be said that given the small corpus size, both the models fetches similar documents when the query terms are
+  fairly discriminatory

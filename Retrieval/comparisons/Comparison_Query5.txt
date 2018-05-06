@@ -1,0 +1,23 @@
+Query 5: japan continental airlines
+
+Top 5 Lucene Documents:
+
+5 Q0 Solar_eclipse_of_July_22,_2009 1 0.24408162 Lucene_Model
+5 Q0 Heathrow_Airport 2 0.19354272 Lucene_Model
+5 Q0 Concorde 3 0.19230178 Lucene_Model
+5 Q0 Aeroflot 4 0.1803385 Lucene_Model
+5 Q0 Novosibirsk 5 0.17304218 Lucene_Model
+
+Top 5 BM25 Documents:
+
+5 Q0 Solar_eclipse_of_July_22,_2009 12.092086084 1 BM25_Model
+5 Q0 Concorde 10.0110361688 2 BM25_Model
+5 Q0 Heathrow_Airport 9.4393996601 3 BM25_Model
+5 Q0 Aeroflot 9.39201091698 4 BM25_Model
+5 Q0 Novosibirsk 9.01909032598 5 BM25_Model
+
+Observation:
+
+--All the 5 documents are common in both the lists
+--3 documents preserve their orders
+--Both the models has retrieved in an almost similar model

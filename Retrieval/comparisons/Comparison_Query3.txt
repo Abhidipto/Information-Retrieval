@@ -1,0 +1,39 @@
+Query 3: Total Eclipse Solar
+----------------------------
+
+Top 5 Lucene Documents:
+
+3 Q0 Solar_Saros_136 1 0.5027273 Lucene_Model
+3 Q0 List_of_solar_eclipses_visible_from_Russia 2 0.4949489 Lucene_Model
+3 Q0 Solar_Saros_126 3 0.48914298 Lucene_Model
+3 Q0 Solar_eclipse_of_July_8,_1842 4 0.47986215 Lucene_Model
+3 Q0 Solar_eclipse_of_June_24,_1778 5 0.47972506 Lucene_Model
+
+Top 5 BM25 documents:
+
+3 Q0 Nodal_period -0.0 1 BM25_Model
+3 Q0 Siphon -0.0 2 BM25_Model
+3 Q0 Black_moon -0.0 3 BM25_Model
+3 Q0 List_of_lunar_deities -0.0 4 BM25_Model
+3 Q0 Diameter -0.0 5 BM25_Model
+
+Observation:
+
+-- As the corpus size is really small, few words which are related to the seed url, are  present in a large number of documents,thus in BM25 calculation,
+   when log is applied on those words, their value becomes negative an thus gets a lower score.This might be a reason for absence of topically relevant 
+   documents in BM25 list
+   
+--Thus the documents fetched by BM25 are the least relevant to query.For example all the 5 documents  has 0 occurrence of the terms in query
+
+   
+--Lucene gives a much more relevant set of documents. For example , the first document "Solar_Saros_136"  has the following term counts:
+
+total-->59
+solar-->16
+eclipse-->24
+
+total solar-->7
+solar eclipse-->11
+total solar eclipse-->7
+
+

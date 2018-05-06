@@ -1,0 +1,27 @@
+Query 10:volcanic eruptions tornadoes eruption tornado
+
+Top 5 Lucene Documents:
+
+10 Q0 Natural_phenomenon 1 0.70180744 Lucene_Model
+10 Q0 Caldera 2 0.20703347 Lucene_Model
+10 Q0 Lunar_mare 3 0.1383093 Lucene_Model
+10 Q0 Blue_moon 4 0.07276905 Lucene_Model
+10 Q0 Earth 5 0.057618733 Lucene_Model
+
+
+Top 5 BM25 Documents:
+
+10 Q0 Natural_phenomenon 34.1725203716 1 BM25_Model
+10 Q0 Caldera 20.8869069536 2 BM25_Model
+10 Q0 Lunar_mare 16.3165930304 3 BM25_Model
+10 Q0 Blue_moon 10.7573386767 4 BM25_Model
+10 Q0 Geology_of_the_Moon 9.77959875172 5 BM25_Model
+
+Observation :
+
+-- 4 out of 5 documents are similar in  both the lists and also are in same order
+--This result is the most similar between the 2 lists  among the 10 queries
+--The reason could be the length the of the query and the words in them.A 5 term query with 2 pairs of terms almost similar 
+ to each other gives importance to few documents much more than others.Thus those pages gets importance in both the models
+  
+

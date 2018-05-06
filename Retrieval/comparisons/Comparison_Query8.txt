@@ -1,0 +1,24 @@
+Query 8:total eclipse lyrics
+
+Top 5 Lucene Documents:
+
+8 Q0 Solar_eclipse_of_July_10,_1972 1 0.36348093 Lucene_Model
+8 Q0 Solar_eclipses_in_fiction 2 0.19633628 Lucene_Model
+8 Q0 R%C3%A2mnicu_V%C3%A2lcea 3 0.19211899 Lucene_Model
+8 Q0 Blue_moon 4 0.12808366 Lucene_Model
+8 Q0 Solar_Saros_136 5 0.11111792 Lucene_Model
+
+Top 5 BM25 Documents:
+
+8 Q0 6.09643566088 1 BM25_Model
+8 Q0 R%C3%A2mnicu_V%C3%A2lcea 5.74478532401 2 BM25_Model
+8 Q0 Solar_eclipses_in_fiction 3.62380411919 3 BM25_Model
+8 Q0 Blue_moon 3.58155882984 4 BM25_Model
+8 Q0 Compact_Disc 2.40641088507 5 BM25_Model
+
+Observation:
+
+--4 out of 5 documents are common in both the lists
+--2 of those 4 common documents preserve their order
+--The first document "Solar_eclipse_of_July_10,_1972" has high rank in both the lists because it contains all the query terms and 
+"lyric" being a rare term has given this document a high ranking in BM25 list 
