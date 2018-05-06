@@ -1,0 +1,32 @@
+TASK: The objective of this task is to perform focused crawling on the given url i.e. https://en.wikipedia.org/wiki/Solar_eclipse. with two given keywords - "lunar"
+and "moon" in any order, such that words like links with "Moonlit","Lunar","Moon_Landing","honeymoons" etc, should be collected.
+
+Procedure:
+
+1)BFS algorithm is used for collecting the urls starting from the given seed url
+2)The crawler is executed till a depth of 6 or 1000 pages , whichever comes before
+3)while collecting the urls from a page , the given words , i.e. "lunar" and "moon" were searched in the anchor text and the entire url if matched then only that particular link is collected
+
+Procedure for BFS:
+
+1)A loop is maintained till a queue is exhausted or the given depth is reached or the given number of pages are reached
+2)if the current page in the queue is not already visited ,the program stops for 1 second as politeness policy and all the urls are collected from this page by calling the function "fetch_urls"
+3)All the new collected in a list called "pages_in_next_depth" which holds the urls to be crawled for the next depth and then appended to the queue
+4)If all the pages in a certain depth is exhausted , which indicates that all the urls in a certain depth has been visited then it is filled with the urls from "pages_in_next_depth"
+5)Once a page is completely explored , it is added to the "pages_already_crawled" list
+6)The already_crawled list returned
+
+Procedure for Fetching all urls form a page:
+
+1)Main content of the page is extracted from the div having id as "bodyContent"
+2)the url is stored in a text file called "focused_crawled_urls_BFS.txt"
+3)the href part and the anchor text is extracted from each link that starts with "wiki" ,found in the "bodyContent" div 
+4)All hrefs with ":"  in it is discarded and any href found with "#" , only the text prior to "#" is taken into consideration
+5)Both the keywords are matched with both anchor text and the entire url and if matched it is appended to the final list
+6)Finally  the list is returned
+
+
+
+
+
+

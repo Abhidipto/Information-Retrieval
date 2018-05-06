@@ -1,0 +1,72 @@
+Comparison between BFS and DFS crawl:
+
+URL-Overlap:There was a total of 31 urls overlap between BFS crawl and DFS crawl:
+The list of overlapping urls are as follows:
+
+1)https://en.wikipedia.org/wiki/Solar_eclipse
+2)https://en.wikipedia.org/wiki/Eclipse_of_the_Sun_(film)
+3)https://en.wikipedia.org/wiki/Luis_Saslavsky
+4)https://en.wikipedia.org/wiki/Argentina
+5)https://en.wikipedia.org/wiki/Lunar_eclipse
+6)https://en.wikipedia.org/wiki/Asia_Minor
+7)https://en.wikipedia.org/wiki/Equator
+8)https://en.wikipedia.org/wiki/Ellipse
+9)https://en.wikipedia.org/wiki/Moon
+10)https://en.wikipedia.org/wiki/Tide
+11)https://en.wikipedia.org/wiki/International_Standard_Book_Number
+12)https://en.wikipedia.org/wiki/Wayback_Machine
+13)https://en.wikipedia.org/wiki/Ancient_Greek
+14)https://en.wikipedia.org/wiki/Latin_language
+15)https://en.wikipedia.org/wiki/United_Kingdom
+16)https://en.wikipedia.org/wiki/France
+17)https://en.wikipedia.org/wiki/Germany
+18)https://en.wikipedia.org/wiki/Romania
+19)https://en.wikipedia.org/wiki/Canada
+20)https://en.wikipedia.org/wiki/Belgium
+21)https://en.wikipedia.org/wiki/Austria
+22)https://en.wikipedia.org/wiki/Bulgaria
+23)https://en.wikipedia.org/wiki/Hungary
+24)https://en.wikipedia.org/wiki/Slovenia
+25)https://en.wikipedia.org/wiki/Luxembourg
+26)https://en.wikipedia.org/wiki/Russia
+27)https://en.wikipedia.org/wiki/Turkey
+28)https://en.wikipedia.org/wiki/Cyprus
+29)https://en.wikipedia.org/wiki/India
+30)https://en.wikipedia.org/wiki/Digital_object_identifier
+31)https://en.wikipedia.org/wiki/Cambridge_University_Press
+
+Perceived-Quality: 
+i) The DFS crawler picked first urls from first page of each depth and went to the last depth and from there kept backtracking but reached till depth 5 only.So the urls collected from this search diverged quickly from the initial topic  i.e. "Solar Eclipse" and kept on traversing over pages of arbitrary topics.
+
+ii)The BFS crawler could only reach till depth 4 before exhausting the 1000 page limit.Since this crawler visited all the links in a certain depth first before moving on to the next depth, the urls collected from this crawler are more related to the given topic, i.e. "Solar Eclipse"
+
+So in conclusion,in this the given graph, BFS crawl performed better over DFS crawl
+
+Efficiency Aspect:
+ DFS-Crawl took 31 minutes and BFS crawl took 31 minutes.So for the given search space BFS and DFS performed equally in terms of time efficience
+
+Coverage of given topic:
+
+For BFS crawl:
+--There were 563 occurences of the given topic(Solar eclipse) in the urls collected when searched for "solar" or "eclipse"
+--There were 461 occurences of the given topic(Solar eclipse) in the urls collected when searched for "solar" and "eclipse"
+
+For DFS crawl:
+
+--There were 3 occurences of the given topic(Solar eclipse) in the urls collected when searched for "solar" or "eclipse"
+--There were 1 occurences of the given topic(Solar eclipse) in the urls collected when searched for "solar" and "eclipse"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
