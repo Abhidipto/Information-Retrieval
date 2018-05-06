@@ -1,0 +1,39 @@
+
+STOP LIST(WITH TERM FREQUENCIES) GENERATED FROM TRIGRAM INVERTED INDEX:
+
+1)jump to navigation     1000
+2)to navigation search     1000
+3)from wikipedia the     1000
+4)wikipedia the free     1000
+5)the free encyclopedia     1000
+6)encyclopedia jump to     920
+7)free encyclopedia jump     920
+8)one of the     842
+
+
+The logic behind generating the above stop-list is as follows:
+
+1)Term Frequency
+2)Contextual/topical significance of terms and finding the point from where  significant terms starts occuring
+ 
+From list of the most frequent trigramgs below, considering the top 15 terms we see that "of the sun","of the moon","solar eclipse occurs","eclipse occurs when", should not  be considered as stop-words as have topical significance.So as we can see that from top 9 terms, 1 topically significant terms can be found(of the sun), and within next 6 terms, another 3 topically significant terms --"of the moon", "solar eclipse occurs", "eclipse occurs when" is encountered.So we can assume that beyond first 9 terms, there is possibility of finding significant terms will increase.Thus after removing the 1 topically significant term, the final stop-list is prepared.
+
+
+
+
+
+*1)of the sun     1070
+2)jump to navigation     1000
+3)to navigation search     1000
+4)from wikipedia the     1000
+5)wikipedia the free     1000
+6)the free encyclopedia     1000
+7)encyclopedia jump to     920
+8)free encyclopedia jump     920
+9)one of the     842
+*10)of the moon     823
+*11)solar eclipse occurs     764
+12)occurs when the     748
+*13)eclipse occurs when     725
+14)part of the     605
+15)as well as     600

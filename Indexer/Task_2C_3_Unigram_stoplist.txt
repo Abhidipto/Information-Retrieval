@@ -1,0 +1,75 @@
+STOP LIST(WITH TERM FREQUENCIES) GENERATED FROM UNIGRAM INVERTED INDEX:
+
+1)the     132073
+2)of     66072
+3)and     45536
+4)in     39368
+5)a     33625
+6)to     31291
+7)is     20010
+8)as     12957
+9)by     12248
+10)on     11566
+11)for     11018
+12)was     10533
+13)with     10532
+14)from     10482
+15)that     10056
+16)are     8132
+17)at     7676
+18)it     7389
+
+19)an     6848
+20)or     6116
+21)edit     5943
+22)this     5914
+23)be     5887
+24)which     5579
+
+
+The logic behind generating the above stop-list is as follows:
+
+1)Term Frequency
+2)Contextual significance of terms and finding the point from where  significant words starts occuring
+ 
+From list of the most frequent unigramgs below, considering the top 34 terms we see that "solar","moon","eclipse",
+"earth" should not  be considered as stop-words as have contextual significance.So as we can see that from top 25 words, 
+1 topically significant terms can be found and within next 9 terms, another 4 topically significant words is encountered.
+So we can assume that beyond 1 terms, the is possibility of finding significant terms will increase.Thus after removing the 1((#19 solar)) topically significan term, the final stop-list is prepared
+
+
+
+1)the     132073
+2)of     66072
+3)and     45536
+4)in     39368
+5)a     33625
+6)to     31291
+7)is     20010
+8)as     12957
+9)by     12248
+10)on     11566
+11)for     11018
+12)was     10533
+13)with     10532
+14)from     10482
+15)that     10056
+16)are     8132
+17)at     7676
+18)it     7389
+*19)solar     7096
+20)an     6848
+21)or     6116
+22)edit     5943
+23)this     5914
+24)be     5887
+25)which     5579
+*26)moon     4666
+*27)eclipse     4489
+28)were     4430
+29)its     4303
+30)has     3922
+31)have     3901
+*32)sun     3712
+33)also     3685
+*34)earth     3542
